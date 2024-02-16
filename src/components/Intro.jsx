@@ -12,7 +12,7 @@ function Intro() {
             <br className="hidden md:inline lg:hidden" /> Passionate about the programming
           </p>
           <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-            <a rel="noopener noreferrer" href="http://www.github.com/Rajeshpatel07"
+            <a rel="noopener noreferrer" href="http://www.github.com/Rajeshpatel07" target='_blank'
               className="px-8 py-3 text-lg font-semibold border rounded dark:dark:dark:bg-red-400 dark:dark:dark:text-gray-900">Github</a>
             <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded dark:dark:dark:border-gray-100">Resume</a>
           </div>
