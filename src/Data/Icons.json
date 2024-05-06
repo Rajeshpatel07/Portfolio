@@ -1,0 +1,90 @@
+[
+  {
+    "Title": "C",
+    "Icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg"
+  },
+  {
+    "Title": "C++",
+    "Icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/cplusplus-colored.svg"
+  },
+  {
+    "Title": "Javascript",
+    "Icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
+  },
+  {
+    "Title": "Typescript",
+    "Icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
+  },
+  {
+    "Title": "Git",
+    "Icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg"
+  },
+  {
+    "Title": "HTML",
+    "Icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
+  },
+  {
+    "Title": "CSS",
+    "Icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
+  },
+  {
+    "Title": "Tailwind",
+    "Icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg"
+  },
+  {
+    "Title": "React",
+    "Icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
+  },
+  {
+    "Title":"Redux",
+    "Icon":"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/redux-colored.svg"
+  },
+  {
+    "Title": "Node",
+    "Icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg"
+  },
+  {
+    "Title": "Express",
+    "Icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored-dark.svg"
+  },
+{
+    "Title":"Graphql",
+    "Icon":"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/graphql-colored.svg"
+  },
+{
+    "Title":"Appwrite",
+    "Icon":"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/appwrite-colored-dark.svg"
+  },
+  {
+    "Title": "Mongo",
+    "Icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg"
+  },
+{
+    "Title":"Mysql",
+    "Icon":"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg"
+  },
+{
+  "Title":"PostgresSQL",
+  "Icon":"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg"
+},
+  {
+    "Title": "Docker",
+    "Icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/docker-colored.svg"
+  },
+  {
+    "Title": "Linux",
+    "Icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/linux-colored.svg"
+  },
+    {
+    "Title":"Neovim",
+    "Icon":"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/neovim-colored.svg"
+  },
+  {
+    "Title":"Vim",
+    "Icon":"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vim-colored.svg"
+  },
+  {
+    "Title":"Vs Code",
+    "Icon":"https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg"
+  }
+]
