@@ -1,31 +1,45 @@
-import React, { useRef } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import React from 'react'
+import { motion } from 'framer-motion'
 import projects from '../../Data/Projects.json'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const Projects: React.FC = () => {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["0 1", "0.8 1"]
-  })
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+  const straggeringVarients = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: (index: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.05 * index
+      }
+    })
+  }
+
   return (
     <motion.div
-      ref={ref}
-      style={{
-        scale: scaleProgess,
-        opacity: scrollYProgress
-      }}
       className='bg-gray-200  dark:bg-black'>
       <section className="w-screen dark:bg-black text-gray-100 dark:text-gray-800">
         <div className="container w-full px-1 py-14  mx-auto rounded-lg shadow-sm md:w-10/12 sm:px-6">
-          <h1 id='Projects' className='text-5xl pb-6 text-center  font-bold font-serif mx-auto dark:text-white'>Projects</h1>
+          <motion.h1
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            id='Projects' className='text-5xl pb-6 text-center  font-bold font-serif mx-auto text-black dark:text-white '>Projects</motion.h1>
           <section className="py-6  dark:bg-black text-gray-50 dark:text-gray-900">
-            <div className="container grid grid-cols-2 gap-4 p-2 mx-auto md:grid-cols-3 md:p-4">
+            <div className="container grid grid-cols-1 gap-4 p-2 mx-auto lg:grid-cols-2 md:p-4">
               {
-                projects.map(project => (
-                  <motion.section key={project.Title} className='min-h-full w-full relative aspect-square md:aspect-video md:min-h-96'>
+                projects.map((project, index) => (
+                  <motion.section key={project.Title}
+                    variants={straggeringVarients}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    custom={index}
+                    className='min-h-72 w-full relative  md:aspect-video md:min-h-96'>
                     <div className='h-full w-full flex flex-col justify-center items-center gap-4 rounded-md absolute bg-black opacity-0  hover:opacity-80'>
                       <h1 className='text-[3.5vw] text-white font-bold font-serif md:text-[2vw]'>{project.Title}</h1>
                       <article className='text-[2vw] text-white md:text-[1vw]'>{project.Description}</article>
@@ -39,7 +53,6 @@ const Projects: React.FC = () => {
                       src={project.Image} alt={project.Title}
                     />
                   </motion.section>
-
                 ))
               }
             </div>
