@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
       >
         <section className="flex gap-2 py-8 items-center justify-center">
           <div className="h-1 w-[60vw] bg-orange-500"></div>
-          <h1 className="text-3xl font-bold whitespace-nowrap dark:text-white">Contact Me</h1>
+          <h1 id="Contact" className="text-3xl font-bold whitespace-nowrap dark:text-white">Contact Me</h1>
           <div className="h-1 w-[60vw] bg-orange-500"></div>
         </section>
         <section className="mx-auto py-10 ">

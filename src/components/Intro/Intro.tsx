@@ -4,7 +4,7 @@ import Header from '../Header/Header'
 const Intro: React.FC = () => {
   return (
     <>
-      <section className="  text-gray-100 dark:text-gray-800  bg-no-repeat bg-right-bottom bg-contain" style={{ backgroundImage: 'url(img.png)' }}>
+      <section className="  text-gray-100 dark:text-gray-800  bg-no-repeat bg-left-bottom md:bg-right-bottom bg-contain" style={{ backgroundImage: 'url(Img.png)' }}>
         <Header />
         <div className="h-screen container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
           <div className="flex flex-col justify-center p-6 mb-44 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left md:mb-0">
