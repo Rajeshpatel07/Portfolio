@@ -78,7 +78,7 @@ const Header: React.FC = () => {
             }
           </div>
           <div className="items-center flex-shrink-0 hidden lg:flex">
-            <button className="self-center px-8 py-3 font-semibold rounded-3xl bg-violet-600 text-gray-900 dark:text-gray-50">Let's Talk  </button>
+            <a href='https://www.linkedin.com/in/rajesh-patel-046786291' target='_blank' className="self-center px-8 py-3 font-semibold rounded-3xl bg-violet-600 text-gray-900 dark:text-gray-50">Let's Talk  </a>
           </div>
 
           <SidePanel />

@@ -36,9 +36,9 @@ const Footer: React.FC = () => {
         }}
       >
         <section className="flex gap-2 py-8 items-center justify-center">
-          <div className="h-1 w-[60vw] bg-orange-500"></div>
+          <div className="h-1 w-[60vw] bg-black dark:bg-white"></div>
           <h1 id="Contact" className="text-3xl font-bold whitespace-nowrap dark:text-white">Contact Me</h1>
-          <div className="h-1 w-[60vw] bg-orange-500"></div>
+          <div className="h-1 w-[60vw] bg-black dark:bg-white"></div>
         </section>
         <section className="mx-auto py-10 ">
           <ul className="flex  justify-center items-center flex-wrap gap-3">
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
           </ul>
         </section>
         <section className="flex gap-2 py-8 items-center justify-center">
-          <div className="h-1 w-[60vw] bg-orange-500 "></div>
+          <div className="h-1 w-[60vw] bg-black dark:bg-white"></div>
           <ul className="flex items-center gap-2">
             {
               Socials.map(icon => (
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
               ))
             }
           </ul>
-          <div className="h-1 w-[60vw] bg-orange-500"></div>
+          <div className="h-1 w-[60vw] bg-black dark:bg-white"></div>
         </section>
         <div className="px-6 py-5 mx-auto mb-10 bg-gray-500 text-center text-3xl font-bold bg-gray-100 dark:bg-gray-700 dark:text-white rounded-md">Thanks for Scrolling</div>
       </motion.div>
