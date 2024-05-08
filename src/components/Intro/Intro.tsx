@@ -13,7 +13,7 @@ const Intro: React.FC = () => {
             </h1>
             <p className="mt-6 mb-8 text-lg sm:mb-12 text-black dark:text-white">A Self-Taught Full Stack Web Developer</p>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-              <a target="_blank" href="https://drive.google.com/file/d/1jO1NLZyWfuC2qr7PyFejHhciBe4v_ciK/view?usp=drive_link"
+              <a target="_blank" href="https://drive.google.com/file/d/1YjK0aTOLrUupr6mV0b6m-gpfd9sxgM7w/view?usp=drive_link"
                 className="px-8 py-3 text-lg font-semibold rounded bg-violet-600  text-gray-900 dark:text-gray-50">RESUME</a>
             </div>
           </div>
