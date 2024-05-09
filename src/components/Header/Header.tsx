@@ -2,7 +2,7 @@ import React, { useMemo, useState, lazy } from 'react'
 import Headlinks from '../../Data/Headlink.json'
 const SidePanel = lazy(() => import('./SidePanel'));
 import { motion } from 'framer-motion';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const Header: React.FC = () => {
   const htmlElement = useMemo(() => document.querySelector('html'), []);
