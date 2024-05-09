@@ -19,13 +19,13 @@ const Testimonial: React.FC = () => {
   }
 
   return (
-    <motion.section className="my-8 ">
+    <motion.section className="bg-gray-100 dark:bg-gray-800 my-8 py-10">
       <div className="container mx-auto flex flex-col items-center pb-6 mb-4 md:p-10 md:px-12">
         <motion.h1
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl font-semibold leading-none text-center text-black dark:text-white">Testimonial</motion.h1>
+          className="text-4xl py-3 font-semibold leading-none text-center text-black dark:text-white">Testimonial</motion.h1>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-8 lg:gap-20 md:px-10 md:pb-10 lg:grid-cols-2">
         {

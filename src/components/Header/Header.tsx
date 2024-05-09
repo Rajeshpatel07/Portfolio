@@ -2,7 +2,7 @@ import React, { useMemo, useState, lazy } from 'react'
 import Headlinks from '../../Data/Headlink.json'
 const SidePanel = lazy(() => import('./SidePanel'));
 import { motion } from 'framer-motion';
-
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Header: React.FC = () => {
   const htmlElement = useMemo(() => document.querySelector('html'), []);
@@ -47,14 +47,17 @@ const Header: React.FC = () => {
         <ul className="items-stretch hidden space-x-3 lg:flex">
           {
             Headlinks.map((link, index) => (
-              <motion.li className="flex" key={link.Id}
+              <motion.button className="flex" key={link.Id}
                 variants={straggeringVarients}
                 initial="initial"
                 animate="animate"
                 custom={index}
               >
-                <a rel="noopener noreferrer" href={`#${link.Title}`} className="flex items-center text-black dark:text-white text-xl px-4 -mb-1 dark:border- hover:text-violet-500">{link.Title}</a>
-              </motion.li>
+                <Link to={link.Title}
+                  spy={true} smooth={true} duration={500}
+                  className="flex items-center text-black dark:text-white text-xl px-4 -mb-1 dark:border- hover:text-violet-500"
+                >{link.Title}</Link>
+              </motion.button>
 
             ))
           }

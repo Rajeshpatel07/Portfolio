@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
 
   return (
     <motion.div
-      className='bg-gray-200  dark:bg-black'>
+      className=' dark:bg-black'>
       <section className="w-screen dark:bg-black text-gray-100 dark:text-gray-800">
         <div className="container w-full px-1 py-14  mx-auto rounded-lg shadow-sm md:w-10/12 sm:px-6">
           <motion.h1
