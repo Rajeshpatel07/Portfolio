@@ -1,32 +1,51 @@
 [
   {
-    "Title": "Chadding",
+    "Name": "Chadding",
     "Image": "Chadding.png",
-    "Description": "A Live Video Streaming Application",
-    "link":"https://www.github.com/Rajeshpatel07/Chadding"
+    "Tech Stack": "Typescript,React,Tailwind,NodeJs,Express,WebRTC,WebScokets,MySQL,Redis,Docker",
+    "Title": "A Live Video Streaming Application",
+    "Points": [
+      "Chadding uses WebRTC and WebSockets for real-time video streaming and group video conferencing.",
+      "It uses Selective Forwarding Unit (SFU) Architecture for handling the streams.",
+      "Chadding is a Progressive Web App (PWA) which can be downloaded in Mobile.",
+      "It can handle multiple user concurrently with minimal resources.",
+      "It uses 800MB of memory for 1 streamer and 20 viewers at once."
+    ],
+    "link": "https://www.github.com/Rajeshpatel07/Chadding"
   },
   {
-    "Title": "Koinx",
+    "Name": "Koinx",
     "Image": "Koinx_App.png",
-    "Description": "A Trading platform which shows the prices Crypto",
-    "link":"https://www.github.com/Rajeshpatel07/Koinx-App"
+    "Tech Stack": "Typescript, Tailwind CSS, ReactJs, shadcn",
+    "Title": "A Trading platfor which show the Crypto prices.",
+    "Points": [
+      "This web app for crypto enthusiasts, offering real-time pricing updates and interactive chart.",
+      "It uses coin-gecko API for Trending crypto currencies and Trading view package for live and interactive Chat."
+    ],
+    "link": "https://www.github.com/Rajeshpatel07/Koinx_App"
   },
   {
-    "Title": "Tech Pulse",
+    "Name": "Tech Pulse",
     "Image": "Tech_Pulse.png",
-    "Description": "A News platform for latest Tech related news",
-    "link":"https://www.github.com/Rajeshpatel07/Tech-Pulse"
+    "Tech Stack": "Javascript, Tailwindcss, ReactJs , NodeJs, MongoDB",
+    "Title": "A News platform for latest Tech related news",
+    "Points": [
+      "Tech Pulse is a source for cutting-edge technology news, providing latest developments in the tech industry.",
+      "It utilizes the Hacker-News API to provide users with the latest tech news.",
+      "It fetch top 90 articles and show it to the users."
+    ],
+    "link": "https://www.github.com/Rajeshpatel07/Tech-Pulse"
   },
   {
-    "Title": "URL Shortner",
+    "Name": "URL Shortner",
     "Image": "URL_Shortner.png",
-    "Description": "A application which shorten the large url's",
-    "link":"https://www.github.com/Rajeshpatel07/URL-Shortner"
-  },
-  {
-    "Title": "Todo App",
-    "Image": "Todo_App.png",
-    "Description": "A Todo application for listing the Daiy tasks",
-        "link":"https://www.github.com/Rajeshpatel07/Todo-app"
+    "Tech Stack": "HTML, CSS, Javascript, Ejs, NodeJs, MongoDB",
+    "Title": "A application which shorten the large url's",
+    "Points": [
+      "This web app generates short, unique URL's for easy sharing, helpling URL management for users.",
+      "It uses MongoDB to store the original URL and create a short link which user can use.",
+      "If user request for same URL it give the existing short link without creating new one."
+    ],
+    "link": "https://www.github.com/Rajeshpatel07/Tech-Pulse"
   }
 ]

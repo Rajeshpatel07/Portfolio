@@ -1,121 +1,101 @@
-import { useEffect, useState } from 'react'
+import { useState } from "react"
+import footer from '../../Data/Socials.json'
 
 const Intro = () => {
 
   const [state, setState] = useState(false)
 
-  // Replace javascript:void(0) paths with your paths
-  const navigation = [
-    { title: "About", path: "javascript:void(0)" },
-    { title: "Skills", path: "javascript:void(0)" },
-    { title: "Projects", path: "javascript:void(0)" },
-    { title: "Contact", path: "javascript:void(0)" }
-  ]
-
-  useEffect(() => {
-    document.onclick = (e) => {
-      const target = e.target;
-      if (!target.closest(".menu-btn")) setState(false);
-    };
-  }, [])
-
-
-  const Brand = () => (
-    <div className="flex items-center justify-between py-5 md:block">
-      <a href="javascript:void(0)">
-        <img
-          src="Rlogo.png"
-          width={60}
-          height={50}
-          alt="Float UI logo"
-        />
-      </a>
-      <div className="md:hidden">
-        <button className="menu-btn text-gray-500 hover:text-gray-800"
-          onClick={() => setState(!state)}
-        >
-          {
-            state ? (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-            )
-          }
-        </button>
-      </div>
-    </div>
-  )
-
+  // Replace javascript:void(0) path with your path
   return (
-    <div className='relative'>
-      <div className='absolute inset-0 blur-xl h-[580px]' style={{ background: "linear-gradient(143.6deg, rgba(192, 132, 252, 0) 20.79%, rgba(232, 121, 249, 0.26) 40.92%, rgba(204, 171, 238, 0) 70.35%)" }}></div>
-      <div className='relative'>
-        <header>
-          <div className={`md:hidden ${state ? "mx-2 pb-5" : "hidden"}`}>
-            <Brand />
-          </div>
-          <nav className={`pb-5 md:text-sm ${state ? "absolute top-0 inset-x-0 bg-white shadow-lg rounded-xl border mx-2 mt-2 md:shadow-none md:border-none md:mx-0 md:mt-0 md:relative md:bg-transparent" : ""}`}>
-            <div className="gap-x-14 items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
-              <Brand />
-              <div className={`flex-1 items-center mt-8 md:mt-0 md:flex ${state ? 'block' : 'hidden'} `}>
-                <ul className="flex-1 justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
-                  {
-                    navigation.map((item, idx) => {
-                      return (
-                        <li key={idx} className="text-gray-700 hover:text-gray-900">
-                          <a href={item.path} className="block">
-                            {item.title}
-                          </a>
-                        </li>
-                      )
-                    })
-                  }
-                </ul>
-                <div className="items-center justify-end mt-6 space-y-6 md:flex md:mt-0">
-                  <a href="javascript:void(0)" className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex">
-                    Let's Talk
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                      <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </header>
-        <section>
-          <div className="max-w-screen-xl mx-auto px-4 py-36 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex">
-            <div className='flex-none space-y-5 max-w-xl'>
+    <>
+      <nav className="relative items-center pt-5 px-4 mx-auto max-w-screen-xl sm:px-8 md:flex md:space-x-6">
+        <div className="flex justify-between">
+            <img
+              src="Rlogo.png"
+              width={60}
+              alt="Float UI logo"
+            />
+          <button className="text-gray-500 outline-none md:hidden"
+            onClick={() => setState(!state)}
+          >
+            {
+              state ? (
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
 
-              <h1 className="text-4xl text-gray-800 font-extrabold sm:text-5xl">
-                Hi! I AM RAJESH PATEL
-              </h1>
-              <p>
-                A self thought full stack web developer
-              </p>
-              <div className='flex items-center gap-x-3 sm:text-sm'>
-                <a href="javascript:void(0)" className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex">
-                  Resume
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                    <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
-                  </svg>
-                </a>
-
-              </div>
-            </div>
-            <div className='flex-1 hidden md:block'>
-              {/* Replace with your image */}
-              <img src="https://raw.githubusercontent.com/sidiDev/remote-assets/c86a7ae02ac188442548f510b5393c04140515d7/undraw_progressive_app_m-9-ms_oftfv5.svg" className="max-w-xl" />
-            </div>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )
+            }
+          </button>
+        </div>
+        <ul className={`flex-1 justify-between mt-12 md:text-sm md:font-medium md:flex md:mt-0 ${state ? 'absolute inset-x-0 px-4 border-b bg-white md:border-none md:static' : 'hidden'}`}>
+          <div className="items-center space-y-5 md:flex md:space-x-6 md:space-y-0 md:ml-12">
           </div>
-        </section>
-      </div>
-    </div>
+          <li className="order-2 py-5 md:py-0">
+            <a href="javascript:void(0)" className="py-2 px-5 rounded-lg font-medium text-white text-center bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 duration-150 block md:py-3 md:inline">
+              Let's Talk
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section className="py-28">
+        <div className="max-w-screen-xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8">
+          <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
+            <h2 className="text-4xl text-gray-800 font-extrabold md:text-5xl">
+              Hi! I AM RAJESH PATEL
+            </h2>
+            <p>
+              A Self Thought Full Stack Web Developer
+            </p>
+            <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
+              <a
+                className="inline-block rounded border border-indigo-600 px-12 py-3 text-md font-medium text-indigo-600 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500"
+                href="https://drive.google.com/file/d/1en2EulqtjIgeDRMKHjsC0d3CliYg8sqP/view?usp=drive_link"
+              >
+                Resume
+              </a>
+            </div>
+            <ul className="mt-8 flex justify-start gap-2 sm:mt-0 ">
+              {
+                footer.map(item => (
+                  <li key={item.Title} className="border rounded-lg p-2">
+                    <a
+                      href={item.link}
+                      rel="noreferrer"
+                      target="_blank"
+                      className="text-gray-700 transition hover:opacity-75"
+                    >
+                      <span className="sr-only">{item.Title}</span>
+
+                      <svg className="h-6 w-6" fill="currentColor" viewBox={item.viewBox} aria-hidden="true">
+                        <path
+                          fill-rule="evenodd"
+                          d={item.Path}
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                ))
+              }
+
+            </ul>
+
+
+          </div>
+          <div className="flex-none mt-14 md:mt-0 md:max-w-lg">
+            <img
+              src="/profile.png" className=" md:rounded-tl-[108px]"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
-
 export default Intro;
