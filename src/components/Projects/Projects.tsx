@@ -7,24 +7,24 @@ const Projects: React.FC = () => {
   return (
     <>
 
-  <section className="py-14">
+      <section className="py-14">
         <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
-            <div className="max-w-xl mx-auto space-y-3 sm:text-center">
-                <h3 className="text-indigo-600 font-semibold">
-                Projects
-                </h3>
-                <p className="text-gray-800 text-5xl font-bold sm:text-4xl">
-                Check out my latest work
-                </p>
-                <p>
-                I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.                
-                </p>
-            </div>
-            <div className="mt-12">
-              <Cards/>
+          <div className="max-w-xl mx-auto space-y-3 sm:text-center">
+            <h3 className="text-indigo-600 font-semibold">
+              Projects
+            </h3>
+            <p className="text-gray-800 text-5xl font-bold sm:text-4xl">
+              Check out my latest work
+            </p>
+            <p>
+              I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.
+            </p>
+          </div>
+          <div className="mt-12">
+            <Cards />
           </div>
         </div>
-  </section>
+      </section>
 
 
     </>
@@ -52,7 +52,7 @@ const Cards = () => {
                   </div>
                 </div>
 
-                <div className="relative flex items-center bg-gray-300">
+                <div className="relative flex items-center bg-gray-300 px-4">
                   {
                     index % 2 === 0 &&
                     <span
