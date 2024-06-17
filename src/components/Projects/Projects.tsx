@@ -19,48 +19,82 @@ const Projects: React.FC = () => {
     })
   }
 
+
   return (
-    <motion.div
-      className=' dark:bg-black'>
-      <section className="w-screen dark:bg-black text-gray-100 dark:text-gray-800">
-        <div className="container w-full px-1 py-14  mx-auto rounded-lg shadow-sm md:w-10/12 sm:px-6">
-          <motion.h1
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            id='Projects' className='text-5xl pb-6 text-center  font-bold font-serif mx-auto text-black dark:text-white '>Projects</motion.h1>
-          <section className="py-6  dark:bg-black text-gray-50 dark:text-gray-900">
-            <div className="container grid grid-cols-1 gap-4 p-2 mx-auto lg:grid-cols-2 md:p-4">
-              {
-                projects.map((project, index) => (
-                  <motion.section key={project.Title}
-                    variants={straggeringVarients}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{ once: true }}
-                    custom={index}
-                    className='min-h-72 w-full relative  md:aspect-video md:min-h-96'>
-                    <div className='h-full w-full flex flex-col justify-center items-center gap-4 rounded-md absolute bg-black opacity-0  hover:opacity-80'>
-                      <h1 className='text-[3.5vw] text-white font-bold font-serif md:text-[2vw]'>{project.Title}</h1>
-                      <article className='text-[2vw] text-white md:text-[1vw]'>{project.Description}</article>
-                      <motion.a
-                        href={project.link}
-                        target='blank'
-                        whileHover={{ scale: 1.05 }}
-                        className='px-[2vw] py-[0.5vh] bg-orange-700 rounded-xl text-[3vw] md:text-[1vw] md:px-5 md:py-2 md:font-bold'>Check Now</motion.a>
-                    </div>
-                    <LazyLoadImage className='w-full h-full rounded-md shadow-sm  bg-gray-500 dark:bg-gray-500 bg-cover bg-center'
-                      src={project.Image} alt={project.Title}
-                    />
-                  </motion.section>
-                ))
-              }
-            </div>
-          </section>
-        </div>
-      </section>
-    </motion.div>
+    <>
+      <Cards />
+      <Cards />
+    </>
   )
 }
 
-export default Projects
+export default Projects;
+
+const Cards = () => {
+  return (
+    <>
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+            <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+              <img
+                alt=""
+                src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+            </div>
+
+            <div className="lg:py-24">
+              <h2 className="text-3xl font-bold sm:text-4xl">Grow your audience</h2>
+
+              <p className="mt-4 text-gray-600">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis
+                eius quos ea neque sunt, accusantium soluta minus veniam tempora deserunt? Molestiae eius
+                quidem quam repellat.
+              </p>
+
+              <a
+                href="#"
+                className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+              >
+                Get Started Today
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+
+            <div className="lg:py-24">
+              <h2 className="text-3xl font-bold sm:text-4xl">Grow your audience</h2>
+
+              <p className="mt-4 text-gray-600">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis
+                eius quos ea neque sunt, accusantium soluta minus veniam tempora deserunt? Molestiae eius
+                quidem quam repellat.
+              </p>
+
+              <a
+                href="#"
+                className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+              >
+                Get Started Today
+              </a>
+            </div>
+
+            <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+              <img
+                alt=""
+                src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
