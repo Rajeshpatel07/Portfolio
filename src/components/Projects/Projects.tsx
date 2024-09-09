@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
       <section className="py-14">
         <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
           <div className="max-w-xl mx-auto space-y-3 sm:text-center">
-            <h3 className="text-indigo-600 font-semibold">
+            <h3 className="text-indigo-600 text-3xl font-semibold">
               Projects
             </h3>
             <p className="text-gray-800 text-5xl font-bold sm:text-4xl">
@@ -53,13 +53,9 @@ const Cards = () => {
                 </div>
 
                 <div className="relative flex items-center bg-gray-300 px-4">
-                  {
-                    index % 2 === 0 &&
-                    <span
-                      className="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-300"
-                    ></span>
-                  }
-
+                  <span
+                    className={`hidden lg:absolute lg:inset-y-0 ${index % 2 == 0 ? 'lg:-start-16' : 'lg:-end-16'} lg:block lg:w-16 lg:bg-gray-300`}
+                  ></span>
                   <div className="p-4 sm:p-16 lg:p-10">
                     <h2 className="text-2xl font-bold text-black sm:text-3xl">
                       {item.Name}
@@ -67,8 +63,8 @@ const Cards = () => {
 
                     <ul>
                       {
-                        item.Points.map(point => (
-                          <li className="mt-1 text-black list-disc">
+                        item.Points.map((point, index) => (
+                          <li key={index} className="mt-1 text-black list-disc">
                             {point}
                           </li>
 
@@ -91,7 +87,7 @@ const Cards = () => {
                 }
               </div>
             </div>
-          </section>
+          </section >
         ))
       }
 

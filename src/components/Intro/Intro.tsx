@@ -1,5 +1,6 @@
 import { useState } from "react"
 import footer from '../../Data/Socials.json'
+import { resume } from '../../Data/links'
 
 const Intro = () => {
 
@@ -10,11 +11,11 @@ const Intro = () => {
     <>
       <nav className="relative items-center pt-5 px-4 mx-auto max-w-screen-xl sm:px-8 md:flex md:space-x-6">
         <div className="flex justify-between">
-            <img
-              src="Rlogo.png"
-              width={60}
-              alt="Float UI logo"
-            />
+          <img
+            src="Rlogo.png"
+            width={60}
+            alt="Float UI logo"
+          />
           <button className="text-gray-500 outline-none md:hidden"
             onClick={() => setState(!state)}
           >
@@ -36,7 +37,7 @@ const Intro = () => {
           <div className="items-center space-y-5 md:flex md:space-x-6 md:space-y-0 md:ml-12">
           </div>
           <li className="order-2 py-5 md:py-0">
-            <a href="javascript:void(0)" className="py-2 px-5 rounded-lg font-medium text-white text-center bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 duration-150 block md:py-3 md:inline">
+            <a href="https://www.linkedin.com/in/rajeshpatel07" className="py-2 px-5 rounded-lg font-medium text-white text-center bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 duration-150 block md:py-3 md:inline">
               Let's Talk
             </a>
           </li>
@@ -54,7 +55,8 @@ const Intro = () => {
             <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
               <a
                 className="inline-block rounded border border-indigo-600 px-12 py-3 text-md font-medium text-indigo-600 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500"
-                href="https://drive.google.com/file/d/1en2EulqtjIgeDRMKHjsC0d3CliYg8sqP/view?usp=drive_link"
+                href={resume}
+                target="_blank"
               >
                 Resume
               </a>

@@ -13,6 +13,18 @@
     ],
     "link": "https://www.github.com/Rajeshpatel07/Chadding"
   },
+ {
+    "Name": "Typeground",
+    "Image": "typeground.png",
+    "Tech Stack": "Typescript, ReactJs, Tailwind CSS, Websocket, NodeJs, MongoDB ",
+    "Title": "Multiplayer Typing Game",
+    "Points": [
+      "It is a platform where people who want to learn how to type can gather and compete with each other and learn in the process.",
+      "It has multiplayer matches with real-time palyers for testing how fast can you type",
+      "It has Custom rooms as well where we can create room and play with friends"
+    ],
+    "link": "https://devpost.com/software/typeground"
+  },
   {
     "Name": "Koinx",
     "Image": "Koinx_App.png",
@@ -37,15 +49,15 @@
     "link": "https://www.github.com/Rajeshpatel07/Tech-Pulse"
   },
   {
-    "Name": "URL Shortner",
+    "Name": "mcShort",
     "Image": "URL_Shortner.png",
-    "Tech Stack": "HTML, CSS, Javascript, Ejs, NodeJs, MongoDB",
+    "Tech Stack": "Javascript, ReactJs, Tailwind CSs, NodeJs, MongoDB",
     "Title": "A application which shorten the large url's",
     "Points": [
       "This web app generates short, unique URL's for easy sharing, helpling URL management for users.",
       "It uses MongoDB to store the original URL and create a short link which user can use.",
       "If user request for same URL it give the existing short link without creating new one."
     ],
-    "link": "https://www.github.com/Rajeshpatel07/Tech-Pulse"
+    "link": "https://devpost.com/software/mcshort"
   }
 ]
