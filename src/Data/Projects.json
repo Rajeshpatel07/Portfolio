@@ -13,7 +13,18 @@
     ],
     "link": "https://www.github.com/Rajeshpatel07/Chadding"
   },
- {
+  {
+    "Name":"Cloudshell",
+    "Image":"cloudshell.png",
+    "Tech Stack":"Typescript, ReactJs, TailwindCSS, Shadcn, NodeJs, Postgres, Docker.",
+    "Points":[
+      "Developed a platform for users to create and manage virtual machines using various operating systems with a 50% faster deployment rate.",
+      "Leveraged Docker to efficiently manage virtual machines, ensuring scalability and resource efficiency with a 30% reduction in memory usage.",
+      " Integrated an interactive terminal for command execution in real-time, handling 50+ concurrent sessions."
+    ],
+    "link":"https://github.com/Rajeshpatel07/cloudshell"
+  },
+  {
     "Name": "Typeground",
     "Image": "typeground.png",
     "Tech Stack": "Typescript, ReactJs, Tailwind CSS, Websocket, NodeJs, MongoDB ",
@@ -25,33 +36,11 @@
     ],
     "link": "https://devpost.com/software/typeground"
   },
-  {
-    "Name": "Koinx",
-    "Image": "Koinx_App.png",
-    "Tech Stack": "Typescript, Tailwind CSS, ReactJs, shadcn",
-    "Title": "A Trading platfor which show the Crypto prices.",
-    "Points": [
-      "This web app for crypto enthusiasts, offering real-time pricing updates and interactive chart.",
-      "It uses coin-gecko API for Trending crypto currencies and Trading view package for live and interactive Chat."
-    ],
-    "link": "https://www.github.com/Rajeshpatel07/Koinx_App"
-  },
-  {
-    "Name": "Tech Pulse",
-    "Image": "Tech_Pulse.png",
-    "Tech Stack": "Javascript, Tailwindcss, ReactJs , NodeJs, MongoDB",
-    "Title": "A News platform for latest Tech related news",
-    "Points": [
-      "Tech Pulse is a source for cutting-edge technology news, providing latest developments in the tech industry.",
-      "It utilizes the Hacker-News API to provide users with the latest tech news.",
-      "It fetch top 90 articles and show it to the users."
-    ],
-    "link": "https://www.github.com/Rajeshpatel07/Tech-Pulse"
-  },
+
   {
     "Name": "mcShort",
     "Image": "URL_Shortner.png",
-    "Tech Stack": "Javascript, ReactJs, Tailwind CSs, NodeJs, MongoDB",
+    "Tech Stack": "Javascript, ReactJs, Tailwind CSS, NodeJs, MongoDB",
     "Title": "A application which shorten the large url's",
     "Points": [
       "This web app generates short, unique URL's for easy sharing, helpling URL management for users.",

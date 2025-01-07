@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'motion/react';
 import projects from '../../Data/Projects.json';
 
 const Projects: React.FC = () => {
@@ -42,7 +43,12 @@ const Cards = () => {
           <section key={item.Name}>
             <div className="mx-auto max-w-screen-2xl px-4 py-10 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1  lg:grid-cols-2">
-                <div className={index % 2 === 0 ? "relative z-10 lg:py-16" : "relative z-10 lg:py-16 lg:order-last"}>
+                <motion.div className={index % 2 === 0 ? "relative z-10 lg:py-16" : "relative z-10 lg:py-16 lg:order-last"}
+                  initial={{ opacity: 0, x: 10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
                   <div className="relative aspect-video lg:h-full">
                     <img
                       alt=""
@@ -50,9 +56,14 @@ const Cards = () => {
                       className="absolute inset-0 h-full w-full object-cover"
                     />
                   </div>
-                </div>
+                </motion.div>
 
-                <div className="relative flex items-center bg-gray-300 px-4">
+                <motion.div
+                  className="relative flex items-center bg-gray-300 px-4"
+                  initial={{ opacity: 0, x: 10 }}
+                  transition={{ duration: 0.6 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                >
                   <span
                     className={`hidden lg:absolute lg:inset-y-0 ${index % 2 == 0 ? 'lg:-start-16' : 'lg:-end-16'} lg:block lg:w-16 lg:bg-gray-300`}
                   ></span>
@@ -78,7 +89,7 @@ const Cards = () => {
                       Check Out
                     </a>
                   </div>
-                </div>
+                </motion.div>
                 {
                   index % 2 != 0 &&
                   <span

@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'motion/react'
 import about from '../../Data/about.json'
 
 const About: React.FC = () => {
@@ -6,7 +7,11 @@ const About: React.FC = () => {
   return (
 
     <section>
-      <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+      < motion.div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="relative h-64 overflow-hidden rounded-lg sm:h-80  lg:h-full">
             <img
@@ -32,7 +37,7 @@ const About: React.FC = () => {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }
