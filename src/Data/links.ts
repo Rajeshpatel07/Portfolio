@@ -24,4 +24,4 @@ export const slugs: Array<string> = [
 	"python"
 ];
 
-export const resume = "https://drive.google.com/file/d/1zyCVtZKQc9k0Cv-kc1JKfDKN-KTJ_wq6/view?usp=drive_link";
+export const resume = "https://drive.google.com/file/d/1_dEbw81T0W8yfPAujmHrZ3eRkaruKUM4/view?usp=sharing";
